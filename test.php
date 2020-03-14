@@ -1,21 +1,16 @@
 <?php 
+ 
 
-// var_dump($_SERVER['SERVER_PROTOCOL']);
-if ($_SERVER["REQUEST_METHOD"] == "POST") {		
-	// var_dump($_SERVER);
-	echo $_REQUEST['fname'];
-	echo $_REQUEST['email'];
-}
-if ($_SERVER['REQUEST_METHOD']=="GET") {
-	echo $_GET['id'];
-}
+ ?>
 
-?>
-
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  Name: <input type="text" name="fname">
-  Email: <input type="text" name="email">
-  <input type="submit">
+<form action="login.php" method="post">
+	<input type="text" name="username" placeholder="Username"> <br>
+	<input type="password" name="password" placeholder="Password"> <br>
+	<button type="submit">Login</button>	
 </form>
+<?php 
+  $email = "rasel.self@gmail.com";
+ ?>
+<a href="login.php?email=<?php echo $email?>">Forget Password ?</a>
 
-<a href="test.php?id=2">Send</a>
+<a href="login.php?id=1">forget password</a>
