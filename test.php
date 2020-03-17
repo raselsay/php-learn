@@ -1,16 +1,24 @@
 <?php 
- 
+$a=10;
+$b=99;
+$c=12;
 
- ?>
+// if ($a<$b && $a<$c) {
+// 	echo $a;
+// } elseif($b<$c)
+// {
+//   echo $b; 
+// } else{
+// 	echo $c;
+// }
 
-<form action="login.php" method="post">
-	<input type="text" name="username" placeholder="Username"> <br>
-	<input type="password" name="password" placeholder="Password"> <br>
-	<button type="submit">Login</button>	
-</form>
-<?php 
-  $email = "rasel.self@gmail.com";
- ?>
-<a href="login.php?email=<?php echo $email?>">Forget Password ?</a>
-
-<a href="login.php?id=1">forget password</a>
+$arr =array(23,12,34,200);
+// $c = count($arr);
+$max=0;
+foreach ($arr as $v) {
+	if($v>$max)
+	{
+		$max = $v;
+	}
+}
+echo $max;

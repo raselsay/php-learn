@@ -1,4 +1,5 @@
 <?php
+session_start();
 $a = "In this chapter we will look at some commonly used functions to manipulate strings.";
 // print(str_word_count($a));
 // print(strrev($a));
@@ -18,3 +19,6 @@ if (strlen($a) > 100 ) {
 } else {
 	print('it\'s ok !');
 }
+?>
+
+<h3>Hi : <?php echo $_SESSION['username']?></h3> 
